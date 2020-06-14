@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+
+H:/Code/C++/Postgraduate_DateStructure/LinearList/ElemReverse.h
+Define.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+
+H:/Code/C++/Postgraduate_DateStructure/LinearList/ListDeleteMinElemType.cpp.h
+Define.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+
+H:/Code/C++/Postgraduate_DateStructure/LinearList/delX.h
+Define.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+
+H:/Code/C++/Postgraduate_DateStructure/LinearList/del_Between_S_To_T_ForSequenceLit.h
+Define.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+
+H:/Code/C++/Postgraduate_DateStructure/LinearList/main.cpp
+iostream
+-
+Define.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+ListDeleteMinElemType.cpp.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/ListDeleteMinElemType.cpp.h
+ElemReverse.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/ElemReverse.h
+delX.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/delX.h
+del_Between_S_To_T_ForSequenceLit.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/del_Between_S_To_T_ForSequenceLit.h
+
