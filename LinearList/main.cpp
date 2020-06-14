@@ -1,9 +1,19 @@
 #include <iostream>
+#include <cstring>
 #include "Define.h"
 #include "ListDeleteMinElemType.cpp.h"
 #include "ElemReverse.h"
 #include "delX.h"
 #include "del_Between_S_To_T_ForSequenceLit.h"
+#include "del_SameElemtAll.h"
+using namespace std;
+
+void printL(SqList &L, string Tip){
+    std::cout << Tip << std::endl;
+    for (int i = 0; i < L.length; ++i) {
+        std::cout << L.data[i] << " ";
+    }
+}
 
 void listDeleteMinElemType(){
     SqList L;
@@ -68,6 +78,17 @@ void del_Between_S_To_T_ForSequenceLit(){
 }
 
 
+void del_SameElemtAll(){
+    SqList L;
+    L.MaxSize = InitSize;
+    L.data = new int [11] {7,7,9,5,2,3,2,4,5,6,6};
+    L.length = 11;
+
+    del_SameElemtAll(L);
+    printL(L, "删除所有重复元素后的顺序表");
+
+}
+
 
 
 int main() {
@@ -80,13 +101,16 @@ int main() {
     //p19 二、3 【删除=？ 的所有元素】 方法1；
     //delX();
 
-    //p19 二、3 【删除=？ 的所有元素】 方法2；
+    //p19 二、4 【删除=？ 的所有元素】 方法2；
     //delX_2();
 
     //p19 二、5 【删除 s<= x <= t 的所有元素】
-    del_Between_S_To_T_ForSequenceLit();
+    //del_Between_S_To_T_ForSequenceLit();
+
+    //p19 二、6 【删除所有重复元素的元素】
+
+    del_SameElemtAll();
 }
 
-git config -globaluser．email"you@example．com"
-git config -globaluser·name"YourName"
+
 

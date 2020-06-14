@@ -6,5 +6,6 @@ CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList
 CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList/ListDeleteMinElemType.cpp.h
 CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList/delX.h
 CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList/del_Between_S_To_T_ForSequenceLit.h
+CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList/del_SameElemtAll.h
 CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList/main.cpp
 

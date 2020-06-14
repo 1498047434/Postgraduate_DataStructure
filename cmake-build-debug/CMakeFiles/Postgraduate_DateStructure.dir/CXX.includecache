@@ -24,8 +24,14 @@ H:/Code/C++/Postgraduate_DateStructure/LinearList/del_Between_S_To_T_ForSequence
 Define.h
 H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
 
+H:/Code/C++/Postgraduate_DateStructure/LinearList/del_SameElemtAll.h
+Define.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
+
 H:/Code/C++/Postgraduate_DateStructure/LinearList/main.cpp
 iostream
+-
+cstring
 -
 Define.h
 H:/Code/C++/Postgraduate_DateStructure/LinearList/Define.h
@@ -37,4 +43,6 @@ delX.h
 H:/Code/C++/Postgraduate_DateStructure/LinearList/delX.h
 del_Between_S_To_T_ForSequenceLit.h
 H:/Code/C++/Postgraduate_DateStructure/LinearList/del_Between_S_To_T_ForSequenceLit.h
+del_SameElemtAll.h
+H:/Code/C++/Postgraduate_DateStructure/LinearList/del_SameElemtAll.h
 
