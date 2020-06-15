@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="H:/Code/C++/Postgraduate_DateStructure/LinearList/main.cpp">
+		<Unit filename="H:/Code/C++/Postgraduate_DateStructure/LinearList/LinearList_SeqList/main.cpp">
 			<Option target="Postgraduate_DateStructure"/>
 		</Unit>
 		<Unit filename="H:/Code/C++/Postgraduate_DateStructure/CMakeLists.txt">

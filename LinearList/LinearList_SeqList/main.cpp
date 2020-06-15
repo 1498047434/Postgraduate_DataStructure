@@ -6,6 +6,8 @@
 #include "delX.h"
 #include "del_Between_S_To_T_ForSequenceLit.h"
 #include "del_SameElemtAll.h"
+#include "del_SameOrderedElemtAll.h"
+
 using namespace std;
 
 void printL(SqList &L, string Tip){
@@ -89,6 +91,17 @@ void del_SameElemtAll(){
 
 }
 
+void del_SameOrderedElemtAll(){
+    SqList L;
+    L.MaxSize = InitSize;
+    L.data = new int [11] {1,2,2,2,2,3,3,3,4,4,5};
+    L.length = 11;
+
+    del_SameOrderedElemtAll(L);
+    printL(L, "删除所有重复元素后的顺序表");
+
+}
+
 
 
 int main() {
@@ -107,9 +120,11 @@ int main() {
     //p19 二、5 【删除 s<= x <= t 的所有元素】
     //del_Between_S_To_T_ForSequenceLit();
 
-    //p19 二、6 【删除所有重复元素的元素】
+    //p19 二、6 【删除所有重复元素的元素】 （时间复杂度O（n?））
+//    del_SameElemtAll();
 
-    del_SameElemtAll();
+    //p19 二、6 【删除所有重复元素的元素(第一次以为元素无须)】
+    del_SameOrderedElemtAll();
 }
 
 

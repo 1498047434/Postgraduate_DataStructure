@@ -122,32 +122,32 @@ Postgraduate_DateStructure/fast:
 	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/build
 .PHONY : Postgraduate_DateStructure/fast
 
-LinearList/main.obj: LinearList/main.cpp.obj
+LinearList/LinearList_SeqList/main.obj: LinearList/LinearList_SeqList/main.cpp.obj
 
-.PHONY : LinearList/main.obj
+.PHONY : LinearList/LinearList_SeqList/main.obj
 
 # target to build an object file
-LinearList/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj
-.PHONY : LinearList/main.cpp.obj
+LinearList/LinearList_SeqList/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj
+.PHONY : LinearList/LinearList_SeqList/main.cpp.obj
 
-LinearList/main.i: LinearList/main.cpp.i
+LinearList/LinearList_SeqList/main.i: LinearList/LinearList_SeqList/main.cpp.i
 
-.PHONY : LinearList/main.i
+.PHONY : LinearList/LinearList_SeqList/main.i
 
 # target to preprocess a source file
-LinearList/main.cpp.i:
-	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.i
-.PHONY : LinearList/main.cpp.i
+LinearList/LinearList_SeqList/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.i
+.PHONY : LinearList/LinearList_SeqList/main.cpp.i
 
-LinearList/main.s: LinearList/main.cpp.s
+LinearList/LinearList_SeqList/main.s: LinearList/LinearList_SeqList/main.cpp.s
 
-.PHONY : LinearList/main.s
+.PHONY : LinearList/LinearList_SeqList/main.s
 
 # target to generate assembly for a file
-LinearList/main.cpp.s:
-	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.s
-.PHONY : LinearList/main.cpp.s
+LinearList/LinearList_SeqList/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.s
+.PHONY : LinearList/LinearList_SeqList/main.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... Postgraduate_DateStructure
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LinearList/main.obj
-	@echo ... LinearList/main.i
-	@echo ... LinearList/main.s
+	@echo ... LinearList/LinearList_SeqList/main.obj
+	@echo ... LinearList/LinearList_SeqList/main.i
+	@echo ... LinearList/LinearList_SeqList/main.s
 .PHONY : help
 
 

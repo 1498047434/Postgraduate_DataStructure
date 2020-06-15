@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj"
+  "CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj"
   "Postgraduate_DateStructure.exe"
   "Postgraduate_DateStructure.exe.manifest"
   "Postgraduate_DateStructure.pdb"

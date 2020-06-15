@@ -56,27 +56,27 @@ include CMakeFiles/Postgraduate_DateStructure.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Postgraduate_DateStructure.dir/flags.make
 
-CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: CMakeFiles/Postgraduate_DateStructure.dir/flags.make
-CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj: ../LinearList/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Code\C++\Postgraduate_DateStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj"
-	J:\Environment\C_Cpp\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Postgraduate_DateStructure.dir\LinearList\main.cpp.obj -c H:\Code\C++\Postgraduate_DateStructure\LinearList\main.cpp
+CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj: CMakeFiles/Postgraduate_DateStructure.dir/flags.make
+CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj: ../LinearList/LinearList_SeqList/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Code\C++\Postgraduate_DateStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj"
+	J:\Environment\C_Cpp\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Postgraduate_DateStructure.dir\LinearList\LinearList_SeqList\main.cpp.obj -c H:\Code\C++\Postgraduate_DateStructure\LinearList\LinearList_SeqList\main.cpp
 
-CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.i"
-	J:\Environment\C_Cpp\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\Code\C++\Postgraduate_DateStructure\LinearList\main.cpp > CMakeFiles\Postgraduate_DateStructure.dir\LinearList\main.cpp.i
+CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.i"
+	J:\Environment\C_Cpp\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\Code\C++\Postgraduate_DateStructure\LinearList\LinearList_SeqList\main.cpp > CMakeFiles\Postgraduate_DateStructure.dir\LinearList\LinearList_SeqList\main.cpp.i
 
-CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.s"
-	J:\Environment\C_Cpp\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\Code\C++\Postgraduate_DateStructure\LinearList\main.cpp -o CMakeFiles\Postgraduate_DateStructure.dir\LinearList\main.cpp.s
+CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.s"
+	J:\Environment\C_Cpp\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\Code\C++\Postgraduate_DateStructure\LinearList\LinearList_SeqList\main.cpp -o CMakeFiles\Postgraduate_DateStructure.dir\LinearList\LinearList_SeqList\main.cpp.s
 
 # Object files for target Postgraduate_DateStructure
 Postgraduate_DateStructure_OBJECTS = \
-"CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj"
+"CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj"
 
 # External object files for target Postgraduate_DateStructure
 Postgraduate_DateStructure_EXTERNAL_OBJECTS =
 
-Postgraduate_DateStructure.exe: CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj
+Postgraduate_DateStructure.exe: CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj
 Postgraduate_DateStructure.exe: CMakeFiles/Postgraduate_DateStructure.dir/build.make
 Postgraduate_DateStructure.exe: CMakeFiles/Postgraduate_DateStructure.dir/linklibs.rsp
 Postgraduate_DateStructure.exe: CMakeFiles/Postgraduate_DateStructure.dir/objects1.rsp

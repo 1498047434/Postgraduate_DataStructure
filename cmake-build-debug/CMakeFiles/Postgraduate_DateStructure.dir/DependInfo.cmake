@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "H:/Code/C++/Postgraduate_DateStructure/LinearList/main.cpp" "H:/Code/C++/Postgraduate_DateStructure/cmake-build-debug/CMakeFiles/Postgraduate_DateStructure.dir/LinearList/main.cpp.obj"
+  "H:/Code/C++/Postgraduate_DateStructure/LinearList/LinearList_SeqList/main.cpp" "H:/Code/C++/Postgraduate_DateStructure/cmake-build-debug/CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
