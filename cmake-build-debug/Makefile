@@ -122,32 +122,32 @@ Postgraduate_DateStructure/fast:
 	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/build
 .PHONY : Postgraduate_DateStructure/fast
 
-LinearList/LinearList_SeqList/main.obj: LinearList/LinearList_SeqList/main.cpp.obj
+LinearList/LinearList_LinkList/main.obj: LinearList/LinearList_LinkList/main.cpp.obj
 
-.PHONY : LinearList/LinearList_SeqList/main.obj
+.PHONY : LinearList/LinearList_LinkList/main.obj
 
 # target to build an object file
-LinearList/LinearList_SeqList/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.obj
-.PHONY : LinearList/LinearList_SeqList/main.cpp.obj
+LinearList/LinearList_LinkList/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_LinkList/main.cpp.obj
+.PHONY : LinearList/LinearList_LinkList/main.cpp.obj
 
-LinearList/LinearList_SeqList/main.i: LinearList/LinearList_SeqList/main.cpp.i
+LinearList/LinearList_LinkList/main.i: LinearList/LinearList_LinkList/main.cpp.i
 
-.PHONY : LinearList/LinearList_SeqList/main.i
+.PHONY : LinearList/LinearList_LinkList/main.i
 
 # target to preprocess a source file
-LinearList/LinearList_SeqList/main.cpp.i:
-	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.i
-.PHONY : LinearList/LinearList_SeqList/main.cpp.i
+LinearList/LinearList_LinkList/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_LinkList/main.cpp.i
+.PHONY : LinearList/LinearList_LinkList/main.cpp.i
 
-LinearList/LinearList_SeqList/main.s: LinearList/LinearList_SeqList/main.cpp.s
+LinearList/LinearList_LinkList/main.s: LinearList/LinearList_LinkList/main.cpp.s
 
-.PHONY : LinearList/LinearList_SeqList/main.s
+.PHONY : LinearList/LinearList_LinkList/main.s
 
 # target to generate assembly for a file
-LinearList/LinearList_SeqList/main.cpp.s:
-	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_SeqList/main.cpp.s
-.PHONY : LinearList/LinearList_SeqList/main.cpp.s
+LinearList/LinearList_LinkList/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Postgraduate_DateStructure.dir\build.make CMakeFiles/Postgraduate_DateStructure.dir/LinearList/LinearList_LinkList/main.cpp.s
+.PHONY : LinearList/LinearList_LinkList/main.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... Postgraduate_DateStructure
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LinearList/LinearList_SeqList/main.obj
-	@echo ... LinearList/LinearList_SeqList/main.i
-	@echo ... LinearList/LinearList_SeqList/main.s
+	@echo ... LinearList/LinearList_LinkList/main.obj
+	@echo ... LinearList/LinearList_LinkList/main.i
+	@echo ... LinearList/LinearList_LinkList/main.s
 .PHONY : help
 
 
