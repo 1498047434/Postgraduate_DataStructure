@@ -5,30 +5,87 @@
 
 using namespace std;
 
-//æ‰“å°é“¾è¡¨
-void printL(LinkList L){
+//´òÓ¡Á´±í
+void printL(LinkList L, string Tip){
     LNode *cur = L->next;
+    cout<< Tip <<endl;
     while (cur != NULL){
         cout<< cur->data << " ";
         cur = cur->next;
     }
+    cout<<endl;
 }
 
-//åˆ›å»ºé“¾è¡¨
+//´òÓ¡Á´±í
+void printLNoHeadPoint(LinkList L, string Tip){
+    LNode *cur = L;
+    cout<< Tip <<endl;
+    while (cur != NULL){
+        cout<< cur->data << " ";
+        cur = cur->next;
+    }
+    cout<<endl;
+}
+
+//´´½¨Á´±í
 void createLinkList(){
-//    //å¤´æ’æ³•
+//    //Í·²å·¨
 //    LinkList L;
 //    List_HeadInsert(L);
-//    printL(L);
+//    printL(L,Í·²å·¨Á´±íÈçÏÂ£º);
 
-    //å°¾æ’æ³•
+    //Î²²å·¨
     LinkList L1;
     List_TailInsert(L1);
-    printL(L1);
+    printL(L1,"Î²²å·¨Á´±íÈçÏÂ£º");
+}
+
+//°´ĞòºÅÉ¾³ıÒ»¸ö½Úµã
+void GetElem(){
+    //Î²²å·¨ÊæÊÊ»¯Á´±í
+    LinkList L1;
+    List_TailInsert(L1);
+    printL(L1,"Î²²å·¨Á´±íÈçÏÂ£º");
+
+    cout<< "ÇëÊäÈëÒª²éÑ¯Á´±íµÄĞòºÅ£º"<<endl;
+    int i;
+    scanf("%d", &i);
+    LNode *node = GetElem(L1, i);
+    cout<< "²éÑ¯µ½µÄÖµÎª£º"<< node->data <<endl;
+}
+//°´Öµ²éÕÒ
+void LocateElem(){
+    LinkList L;
+    testList(L,
+            new ElemType[10]{1,2,3,4,8,5,1,4,7,5},
+            10);
+    printL(L,"Á´±íÈçÏÂ£º");
+
+    cout<< "ÇëÊäÈëÒª²éÑ¯µÄÖµ£º"<<endl;
+    int i;
+    scanf("%d", &i);
+    LNode *node = LocateElem(L, i);
+    cout<< "²éÑ¯µ½µÄÖµÎª£º"<< node->data <<endl;
+}
+void del_x_equals_nodeValue(){
+    LinkList L;
+    testListNoHeadPoint(L,
+             new ElemType[13]{1,2,3,6,44,8,5,1,4,2,7,5,5},
+             13);
+    printLNoHeadPoint(L,"Á´±íÈçÏÂ£º");
+    cout<< "ÇëÊäÈëÒªdelµÄÖµ£º"<<endl;
+    int i;
+    scanf("%d", &i);
+    del_x_equals_nodeValue(L, i);
+    printLNoHeadPoint(L,"É¾³ıºóµÄÁ´±íÈçÏÂ£º");
 }
 
 
 int main(){
 
-    createLinkList(); //åˆ›å»ºé“¾è¡¨
+//    createLinkList(); //´´½¨Á´±í
+//    GetElem(); //°´ĞòºÅÉ¾³ıÒ»¸ö½Úµã
+//    LocateElem();//°´Öµ²éÕÒ
+//    del_x_equals_nodeValue();//µİ¹éÉ¾³ı
+
 }
