@@ -19,16 +19,16 @@ void swap(ElemType &e1, ElemType &e2){
     e2 = temp;
 }
 
-//å¤´æ’æ³•å»ºç«‹å•é“¾è¡¨ï¼ˆé€†å‘å»ºç«‹å•é“¾è¡¨ï¼‰
+//Í·²å·¨½¨Á¢µ¥Á´±í£¨ÄæÏò½¨Á¢µ¥Á´±í£©
 LinkList List_HeadInsert(LinkList &L){
     LNode *s;
     int x;
 
-    L = new LNode (); //å¤´ç»“ç‚¹
-    L->next = NULL;      //åˆå§‹é“¾è¡¨ä¸ºç©º
+    L = new LNode (); //Í·½áµã
+    L->next = NULL;      //³õÊ¼Á´±íÎª¿Õ
 
     scanf("%d", &x);
-    while (x != 9999){ //è¾“å…¥9999è¡¨ç¤ºç»“æŸ
+    while (x != 9999){ //ÊäÈë9999±íÊ¾½áÊø
         s = new LNode();
         s->data = x;
         s->next = L->next;
@@ -39,16 +39,16 @@ LinkList List_HeadInsert(LinkList &L){
 }
 
 
-//å°¾æ’æ³•å»ºç«‹å•é“¾è¡¨
+//Î²²å·¨½¨Á¢µ¥Á´±í
 LinkList List_TailInsert(LinkList &L){
-    L = new LNode (); //å¤´ç»“ç‚¹
-    LNode *r = L; //rä¸ºå°¾ç»“ç‚¹æŒ‡é’ˆ
+    L = new LNode (); //Í·½áµã
+    LNode *r = L; //rÎªÎ²½áµãÖ¸Õë
 
     int x;
     LNode *s;
 
     scanf("%d", &x);
-    while (x != 9999){ //è¾“å…¥9999è¡¨ç¤ºç»“æŸ
+    while (x != 9999){ //ÊäÈë9999±íÊ¾½áÊø
         s = new LNode();
         s->data = x;
         r->next = s;
@@ -56,14 +56,14 @@ LinkList List_TailInsert(LinkList &L){
         scanf("%d", &x);
     }
 
-    r->next = NULL;      //åˆå§‹é“¾è¡¨ä¸ºç©º
+    r->next = NULL;      //³õÊ¼Á´±íÎª¿Õ
     return L;
 }
 
-//ç”¨æ•°ç»„å»ºç«‹å•é“¾è¡¨
+//ÓÃÊı×é½¨Á¢µ¥Á´±í
 LinkList testList(LinkList &L, ElemType elems[], int length){
-    L = new LNode (); //å¤´ç»“ç‚¹
-    LNode *r = L; //rä¸ºå°¾ç»“ç‚¹æŒ‡é’ˆ
+    L = new LNode (); //Í·½áµã
+    LNode *r = L; //rÎªÎ²½áµãÖ¸Õë
 
     LNode *s;
     for (int i = 0; i < length; ++i) {
@@ -72,34 +72,34 @@ LinkList testList(LinkList &L, ElemType elems[], int length){
         r->next = s;
         r = s;
     }
-    r->next = NULL;      //åˆå§‹é“¾è¡¨ä¸ºç©º
+    r->next = NULL;      //³õÊ¼Á´±íÎª¿Õ
     return L;
 }
 
-//ç”¨æ•°ç»„å»ºç«‹å•é“¾è¡¨ï¼ˆä¸å¸¦å¤´æŒ‡é’ˆï¼‰
+//ÓÃÊı×é½¨Á¢µ¥Á´±í£¨²»´øÍ·Ö¸Õë£©
 LinkList testListNoHeadPoint(LinkList &L, ElemType elems[], int length){
-    L = NULL; //å¤´æŒ‡é’ˆ
-    LNode *r; //å°¾æŒ‡é’ˆ
+    L = NULL; //Í·Ö¸Õë
+    LNode *r; //Î²Ö¸Õë
 
-    LNode *s; //æ–°èŠ‚ç‚¹
+    LNode *s; //ĞÂ½Úµã
     for (int i = 0; i < length; ++i) {
         s = new LNode();
         s->data = elems[i];
 
         if (L == NULL)
-            L = s; //æ’å…¥çš„æ˜¯ä¸€ä¸ªèŠ‚ç‚¹
+            L = s; //²åÈëµÄÊÇÒ»¸ö½Úµã
         else{
-            r->next = s; //æ’å…¥çš„ç¬¬äºŒä¸ªèŠ‚ç‚¹èµ·ï¼Œè®©å‰ä¸€ä¸ªèŠ‚ç‚¹ä¸‹ä¸€èŠ‚ç‚¹æŒ‡å‘s
+            r->next = s; //²åÈëµÄµÚ¶ş¸ö½ÚµãÆğ£¬ÈÃÇ°Ò»¸ö½ÚµãÏÂÒ»½ÚµãÖ¸Ïòs
         }
-        r = s; //å†è®©å°¾æŒ‡é’ˆæŒ‡å‘sèŠ‚ç‚¹
+        r = s; //ÔÙÈÃÎ²Ö¸ÕëÖ¸Ïòs½Úµã
     }
     if (r != NULL){
-        r->next = NULL; //å°¾ç»“ç‚¹çš„ä¸‹ä¸€ä¸ªæŒ‡é’ˆæŒ‡å‘ä¸ºNULL
+        r->next = NULL; //Î²½áµãµÄÏÂÒ»¸öÖ¸ÕëÖ¸ÏòÎªNULL
     }
     return L;
 }
 
-//æŒ‰å€¼æŸ¥æ‰¾
+//°´Öµ²éÕÒ
 LNode *LocateElem(LinkList L, int e){
     LNode *p = L->next;
     while (p){
@@ -110,29 +110,35 @@ LNode *LocateElem(LinkList L, int e){
     return NULL;
 }
 
-//æŒ‰åºå·æŸ¥æ‰¾èŠ‚ç‚¹å€¼
+//°´ĞòºÅ²éÕÒ½ÚµãÖµ
 LNode *GetElem(LinkList L, int i){
-    int j = 1; //è®¡æ•°
+    int j = 1; //¼ÆÊı
     LNode *p = L->next;
 
-    if (i == 0){ //è¿”å›å¤´ç»“ç‚¹
+    if (i == 0){ //·µ»ØÍ·½áµã
         return L;
     }
-    if (i < 1){ //iä¸åˆæ³•ï¼Œè¿”å›NULL
+    if (i < 1){ //i²»ºÏ·¨£¬·µ»ØNULL
         return NULL;
     }
     while (p && j < i){
         p = p->next;
         j ++;
     }
-    return p; // è‹¥iè¶…è¿‡è¡¨é•¿ è¿”å›NULLï¼
+    return p; // Èôi³¬¹ı±í³¤ ·µ»ØNULL£¡
 }
 
-//é€’å½’åˆ é™¤å€¼ä¸ºxçš„èŠ‚ç‚¹
+/**
+ * ¿ÎºóÌâ********************************************
+ * @param L
+ * @param x
+ */
+
+//µİ¹éÉ¾³ıÖµÎªxµÄ½Úµã
 void del_x_equals_nodeValue(LinkList &L, ElemType x){
-    LNode *p; //æŒ‡å‘è¢«åˆ é™¤æ¥å•
+    LNode *p; //Ö¸Ïò±»É¾³ı½Óµ¥
     if (L == NULL){
-        //ç©ºè¡¨
+        //¿Õ±í
         return;
     }
     if (L->data == x){
@@ -142,6 +148,31 @@ void del_x_equals_nodeValue(LinkList &L, ElemType x){
         free(p);
     }else{
         del_x_equals_nodeValue(L->next, x);
+    }
+}
+
+
+//É¾³ıÖµÎªxµÄ½Úµã(hasHead)
+void del_x_hasHead(LinkList &L, ElemType x){
+
+    LNode *p; //Ö¸Ïò±»É¾³ı½Úµã
+    LNode *prior = L; //µ±Ç°½ÚµãÇ°Çı½Úµã
+//    LNode *cur = L->next; //µ±Ç°½Úµã
+    if (prior->next == NULL){
+        //¿Õ±í
+        return;
+    }
+    while (prior->next != NULL){
+        if (prior->next->data == x){
+
+            p = prior->next;
+            //ÒªÉ¾³ı½ÚµãµÄÇ°Çı½ÚµãµÄÖ¸ÕëÓòÖ¸ÏòÏÂÒ»¸ö½Úµã
+            prior->next = prior->next->next;
+
+            free(p);
+        }else{
+            prior = prior->next;
+        }
     }
 }
 

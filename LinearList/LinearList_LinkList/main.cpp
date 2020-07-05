@@ -80,12 +80,34 @@ void del_x_equals_nodeValue(){
     printLNoHeadPoint(L,"删除后的链表如下：");
 }
 
-
+//删除值为x的节点(hasHead)
+void del_x_hasHead(){
+    LinkList L;
+    testList(L,
+            new ElemType[13]{1,2,3,6,44,8,5,1,4,2,7,5,5},
+            13);
+    printL(L,"链表如下：");
+    cout<< "请输入要del的值："<<endl;
+    int i;
+    scanf("%d", &i);
+    del_x_hasHead(L, i);
+    printL(L,"删除后的链表如下：");
+}
 int main(){
 
+    /*
+     * 基础实现
+     */
 //    createLinkList(); //创建链表
-//    GetElem(); //按序号删除一个节点
+//    GetElem(); //按序号查找一个节点
 //    LocateElem();//按值查找
-//    del_x_equals_nodeValue();//递归删除
+
+    /*
+     * 课后题
+     */
+//    del_x_equals_nodeValue();//递归删除链表中所有值为x的节点 P40 T1
+    del_x_hasHead();//删除值为x的节点(hasHead)P40 T2
+
+
 
 }
