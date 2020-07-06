@@ -5,6 +5,8 @@
 #ifndef POSTGRADUATE_DATESTRUCTURE_DEFINE_H
 #define POSTGRADUATE_DATESTRUCTURE_DEFINE_H
 #include <iostream>
+using namespace std;
+
 
 typedef int ElemType ;
 
@@ -176,4 +178,36 @@ void del_x_hasHead(LinkList &L, ElemType x){
     }
 }
 
+//单链表从表尾部开始打印输出(递归实现)
+void printL_of_rearStart(LinkList L, bool flag){ //flag 是否为头结点
+    if (L->next != NULL){
+        printL_of_rearStart(L->next, false);
+    }
+    if (L!= NULL && !flag){
+        cout << L->data <<endl;
+    }
+}
+//带头结点单链表删除最小值
+void del_min(LinkList &L){
+    if (L->next == NULL){
+        return;
+    }
+    LNode *pre = L; //当前指针的前驱
+    LNode *cur = L->next; //当前指针
+    LNode *preMin = pre; //保存最小节点前驱
+    LNode *curMin = cur; //保存最小节点
+
+    while (cur != NULL){
+        if (cur->data < curMin->data ){
+            preMin = pre;
+            curMin = cur;
+        }
+        pre = pre->next;
+        cur = cur->next;
+    }
+
+    //删除最小值节点
+    preMin->next = curMin->next;
+    free(curMin);
+}
 #endif //POSTGRADUATE_DATESTRUCTURE_DEFINE_H

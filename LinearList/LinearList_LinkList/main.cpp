@@ -93,6 +93,26 @@ void del_x_hasHead(){
     del_x_hasHead(L, i);
     printL(L,"删除后的链表如下：");
 }
+//单链表从表尾部开始打印输出
+void printL_of_rearStart(){
+    LinkList L;
+    testList(L,
+             new ElemType[13]{1,2,3,6,44,8,5,1,4,2,7,5,5},
+             13);
+    printL(L,"链表如下：");
+    printL_of_rearStart(L, true);
+}
+//带头结点单链表删除最小值
+void del_min(){
+    LinkList L;
+    testList(L,
+             new ElemType[13]{9,0,3,6,44,8,5,1,4,2,7,5,5},
+             13);
+    printL(L,"链表如下：");
+    del_min(L);
+    printL(L,"删除后的链表如下：");
+}
+
 int main(){
 
     /*
@@ -105,9 +125,10 @@ int main(){
     /*
      * 课后题
      */
-//    del_x_equals_nodeValue();//递归删除链表中所有值为x的节点 P40 T1
-    del_x_hasHead();//删除值为x的节点(hasHead)P40 T2
-
+//    del_x_equals_nodeValue();//递归删除链表中所有值为x的节点 【P40 T1】
+//    del_x_hasHead();//删除值为x的节点(hasHead)【P40 T2】
+//    printL_of_rearStart(); //单链表从表尾部开始打印输出 【P40 T3】
+    del_min(); //带头结点单链表删除最小值 【P40 T4】
 
 
 }
